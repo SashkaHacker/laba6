@@ -5,10 +5,7 @@
 
 if __name__ == "__main__":
     word1, word2, word3 = input(), input(), input()
-    lst1 = [i for i in word1]
-    lst2 = [i for i in word2]
-    lst3 = [i for i in word3]
-    letters = set(lst1) & set(lst2) & set(lst3)
+    letters = set(word1) & set(word2) & set(word3)
     if letters:
         print(*letters)
     else:
